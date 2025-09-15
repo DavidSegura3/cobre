@@ -34,7 +34,6 @@ public class CrossBorderMovementKafkaListener {
             log.info("Successfully processed CBMM event: {}", event.getEventId());
         } catch (Exception e) {
             log.error("Failed to process CBMM event: {}", event.getEventId(), e);
-            // Aquí se podría implementar la lógica de reintento o DLQ
         }
     }
 }

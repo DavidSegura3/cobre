@@ -14,7 +14,7 @@ public class Transaction {
     private String accountId;
     private BigDecimal amount;
     private String currency;
-    private String type; // CREDIT o DEBIT
+    private String type;
     private LocalDateTime timestamp;
     private String eventId;
 }
