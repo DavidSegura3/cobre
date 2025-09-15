@@ -1,0 +1,41 @@
+spring:
+  application:
+    name = cbmm-api
+
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:cobre;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: accounts-module-group
+      auto-offset-reset: earliest
+      properties:
+        spring:
+          json:
+            value:
+              default:
+                type: com.cobre.cbmm.domain.models.movement.CrossBorderMovementEvent
+            use:
+              type:
+                headers: false
+
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        failureRateThreshold: 50
+        waitDurationInOpenState: 5s
+        slidingWindowType: COUNT_BASED
+        slidingWindowSize: 10
+        minimumNumberOfCalls: 5
