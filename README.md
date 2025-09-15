@@ -89,4 +89,13 @@ java -jar build/libs/cbmm-api-1.0.jar
 
 ### 5. Uso de la Inteligencia Artificial
 
-La IA se utilizó como una herramienta de productividad. Se usó para generar código, diseñar la estrategia de pruebas, redactar este `README` y depurar errores. Los prompts y sus respuestas correspondientes se documentan en el archivo `AI_USAGE.md` del repositorio.
+La IA se utilizó como una herramienta de productividad. Se usó para:
+- Generar código de:
+  - Backoff
+  - Retries
+  - Circuit breaker
+- Diseñar la estrategia de pruebas. 
+- Redactar este `README`. 
+- Depurar errores. 
+- Generar los prompts, y cada una de sus respuestas correspondientes se documentan en el archivo `AI_USAGE.md` del repositorio.
+
