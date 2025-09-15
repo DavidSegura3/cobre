@@ -32,5 +32,8 @@ Prompt de ejemplo:
 ### 5. **Ética y responsabilidad**
 
 ```
-   El uso de la IA se mantuvo de forma responsable, complementando el trabajo humano y no sustituyéndolo. Todo el código generado fue revisado y validado por el desarrollador para garantizar la calidad, seguridad y el cumplimiento de los estándares del proyecto. La IA actuó como un copiloto, acelerando las tareas rutinarias y proporcionando nuevas perspectivas en la resolución de problemas.
+   El uso de la IA se mantuvo de forma responsable, complementando el trabajo humano y no sustituyéndolo. 
+   La gran parte del código fue generado, revisado y validado por el mi,  para garantizar la calidad, seguridad 
+   y el cumplimiento de los estándares del proyecto. La IA actuó como un copiloto, acelerando las tareas rutinarias 
+   y proporcionando nuevas perspectivas en la resolución de problemas.
 ```
